@@ -30,6 +30,7 @@ app.controller('MyController',function($scope,$http){
 				$scope.viewList[num].ico="http://qiniu.hduhelp.com//image/vote/blockheart.png";
 		}//点赞样式更改
 	});
+	$scope.viewList=[{voteIf:false,sum:11,name:'aaa'},{voteIf:false,sum:11,name:'ada'},{voteIf:true,sum:11,name:'ccc'},{voteIf:false,sum:12,name:'bbb'},{voteIf:true,sum:13,name:'ddd'},{voteIf:false,sum:14,name:'eee'}];
 	$scope.click=function(view){
 		if(view.voteIf)
 		{
