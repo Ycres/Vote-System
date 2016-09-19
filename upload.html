@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+  <title>信息上传</title>
+  <script src="js/jquery.js"></script>
+<!-- 引入qiniu.js和plupload环境 -->
+  <script type="text/javascript" src="js/plupload.full.min.js"></script>
+  <script src="js/qiniu.js"></script>
+  <!-- debug 
+<script type="text/javascript" src="../js/moxie.js"></script>
+<script type="text/javascript" src="../js/plupload.dev.js"></script>
+-->
+	<!-- 实例化 -->
+	<script src="js/upload.js"></script>
+	<link rel="stylesheet" href="css/upload.css">
+</head>
+<body>
+	<div id="container">
+		<button id="pickfiles">+</button>
+	</div>
+	<div class="text"><label for="">名称：</label><input type="text" placeholder="请输入名称" id="name"></div>
+	<div class="text"><label for="">简介：</label><input type="text" placeholder="请输入名称" id="info"></div>
+	<input type="submit" id="up_load">
+</body>
+</html>

@@ -1,0 +1,52 @@
+body
+{
+	padding-top: 100px;
+	text-align: center;
+	width: 100%;
+	font-family: '微软雅黑';
+}
+#container
+{
+	margin:auto;
+	margin-bottom: 200px;
+	width: 50%;
+	border: 1px solid #ccc;
+}
+#pickfiles
+{
+	background: transparent;
+	border: 0;
+	font-size: 500px;
+	color: #ccc;
+}
+.text
+{
+	margin-top: 50px;
+	width: 100%;
+	font-size: 50px;
+}
+.text input
+{
+	width: 50%;
+	font-size: 50px;
+	border: 0;
+}
+input[type="submit"]
+{
+	width: 30%;
+	background:rgb(30,205,150);
+	color: white;
+	border:0;
+	border-radius: 80px;
+	font-size: 80px;
+	margin-top:200px;
+}
+select
+{
+	width: 50%;
+	font-size: 50px;
+}
+option
+{
+	font-size: 30px;
+}

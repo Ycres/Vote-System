@@ -1,0 +1,180 @@
+*
+{
+	margin:0;
+	border: 0;
+	padding: 0;
+}
+html
+{
+	width: 100%;
+	height: 100%;
+}
+body
+{
+	background-color: #F7F7F7;
+	width:100%;
+	height: 100%;
+	position: relative;
+}
+nav
+{
+	/*background: rgba(108,222,188,0.5);*/
+	background: white;
+	padding: 0;
+	margin:0;
+	width: 100%;
+	height: 8%;
+	position: fixed;
+	z-index: 9;
+	text-align: center;
+	color: #7fdbff;
+	box-shadow: 0 0 5px #aaaaaa;
+}
+nav img
+{
+	height: 50%;
+	position: absolute;
+	left: 5px;
+	top:25%;
+}
+nav h1
+{
+	font-family: '微软雅黑';
+	height: 100%;
+	padding: 0;
+	display: inline-block;
+	font-size: 20px;
+	line-height: 50px;
+	vertical-align:middle;
+}
+button
+{
+	position: fixed;
+	bottom: 5%;
+	left: 27%;
+	width:46%;
+	height: 4%;
+	background:#7fdbff;
+	color: white;
+	border-radius:10px;
+	font-size:18px;
+	font-family: '微软雅黑';
+}
+footer
+{
+
+	height: 5%;
+	width: 100%;
+	text-align: center;
+	position: fixed;
+	bottom: 0;
+	font-size: 15px;
+}
+footer small
+{
+	font-family: '微软雅黑';
+	box-sizing:border-box;
+	padding-top:5px;
+	z-index: 9;
+	vertical-align: middle;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	display: block;
+	margin:auto;
+	font-size: 15px;
+	line-height: 15px;
+	color: #777777;
+}
+.container
+{
+
+	text-align: left;
+	font-size: 15px;
+	box-sizing:border-box;
+	overflow: scroll;
+	height: 80%;
+	position: absolute;
+	width:100%;
+	top:10%;
+	left: 0;
+	overflow-x:hidden;
+}
+::-webkit-scrollbar
+{  
+    width: 4px;  
+    height: 16px;  
+    background-color: transparent;  
+} 
+::-webkit-scrollbar-thumb  
+{  
+    border-radius: 10px;  
+    -webkit-box-shadow: inset 0 0 6px white;  
+    background-color: #7fdbff;  
+}  
+.voteBox
+{
+	background: white;
+	padding: 5px;
+	margin:auto;
+	margin-bottom: 4%;/*rgb(103,221,186)*/
+	margin-left: 17px;
+	font-size: 0;
+	border: 0;
+	box-sizing:border-box;
+	display: inline-block;
+	width:44%;
+	height: 46%;
+	text-align: center;
+	box-shadow: 0 0 10px #aaaaaa;
+}
+.imgBox
+{
+	margin:auto;
+	margin-bottom: 2px;
+	width:100%;
+	height: 90%;
+	position: relative;
+	background: white;
+	border: 0;
+}
+.name
+{
+	color: #777777;
+	font-size: 20px;
+	position: absolute;
+	bottom: 0;
+	width:100%;
+	background: rgba(255,255,255,0.5);
+}
+.imgBox img
+{
+	width:100%;
+	height: 100%;
+	background: white;
+	border: 0;
+}
+span
+{
+	color: #777777;
+	width:50%;
+	display: inline-block;
+	height: 10%;
+	vertical-align: top;
+	font-size: 20px;
+}
+.sum
+{
+	text-align: left;
+}
+.voteIf
+{
+	text-align: right;
+	font-family: '微软雅黑';
+	font-size: 18px;
+}
+span img
+{
+	height: 100%;
+	vertical-align: top;
+}

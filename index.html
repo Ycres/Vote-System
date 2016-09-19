@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<title>助手投票评分主页</title>
+	<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+	<nav>
+		<img src="http://wx.hduhelp.com/addons/vote/template/mobile/img/back.png" alt="">
+		<h1>助手投票评分主页</h1>
+	</nav>
+	<div id="container">
+		<?php
+	     $nn=0;
+	     
+         while($n>0)
+         {print '
+            <a href="http://wx.hduhelp.com/addons/vote/template/mobile/';
+            if($array[$nn]['type']==0){print 'vote';}else{print 'grade';} print '.html?id='.$array[$nn]['id'].'">
+		    <div class="activity">
+
+			   <img src="http://qiniu.hduhelp.com//image/vote/'.$array[$nn]['image'].'" alt="">
+
+			   <h2>'.$array[$nn]['name'].'</h2>
+
+			   <p>点击进入选手们的';
+			   if($array[$nn]['type']==0)
+			   {print '投票';}
+			   else{print '评分';}
+			   print '页面</p>
+
+		    </div>
+		    
+		    ';
+		    $n=$n-1;
+		    $nn=$nn+1;
+	    }
+        ?>
+		
+	</div>
+	<footer>
+		<small>Copyright &copy 杭电助手</small>
+	</footer>
+</body>
+</html>
