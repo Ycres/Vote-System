@@ -260,7 +260,10 @@ footer
 	bottom: 0;
 
 	font-size: 15px;
+
 	background: white;
+
+	box-shadow: 0 0 3px #aaaaaa;
 
 }
 
