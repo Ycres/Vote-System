@@ -153,6 +153,8 @@ footer small
 	height: 100%;
 	background: white;
 	border: 0;
+	object-fit: contain;
+  	object-position: top 75%;
 }
 span
 {
