@@ -4,32 +4,32 @@ var selectedNum=0;//已选择对象数量
 var app=angular.module('app',[]);
 var ratio=1;
 app.controller('MyController',function($scope,$http){
-	$http.post(window.dataUrl,{'pw':'yanggehaoshuai'}).success(function(res){
-		$scope.viewList=res.show;//对象数组
-		window.ratio=parseInt(res.ratio);
-		if(res.history[0]==0)
-		{
-			window.oldHistory=[];
-		}
-		else
-		{
-			window.oldHistory=res.history;
-		}	
-		window.votes=res.num;//投票最高限额
-		$scope.title=res.bigName+'投票页面';//晚会标题
-		for(num in $scope.viewList)
-		{
-			$scope.viewList[num].sum=parseInt($scope.viewList[num].sum);
-			$scope.viewList[num].ratio=parseInt($scope.viewList[num].ratio);
-			if($scope.viewList[num].voteIf)
-			{
-				$scope.viewList[num].ico="http://qiniu.hduhelp.com//image/vote/redheart.png";
-				selectedNum++;
-			}
-			else
-				$scope.viewList[num].ico="http://qiniu.hduhelp.com//image/vote/blockheart.png";
-		}//点赞样式更改
-	});
+	// $http.post(window.dataUrl,{'pw':'yanggehaoshuai'}).success(function(res){
+	// 	$scope.viewList=res.show;//对象数组
+	// 	window.ratio=parseInt(res.ratio);
+	// 	if(res.history[0]==0)
+	// 	{
+	// 		window.oldHistory=[];
+	// 	}
+	// 	else
+	// 	{
+	// 		window.oldHistory=res.history;
+	// 	}	
+	// 	window.votes=res.num;//投票最高限额
+	// 	$scope.title=res.bigName+'投票页面';//晚会标题
+	// 	for(num in $scope.viewList)
+	// 	{
+	// 		$scope.viewList[num].sum=parseInt($scope.viewList[num].sum);
+	// 		$scope.viewList[num].ratio=parseInt($scope.viewList[num].ratio);
+	// 		if($scope.viewList[num].voteIf)
+	// 		{
+	// 			$scope.viewList[num].ico="http://qiniu.hduhelp.com//image/vote/redheart.png";
+	// 			selectedNum++;
+	// 		}
+	// 		else
+	// 			$scope.viewList[num].ico="http://qiniu.hduhelp.com//image/vote/blockheart.png";
+	// 	}//点赞样式更改
+	// });
 	$scope.viewList=[{voteIf:false,sum:11,name:'aaa',image:'img/a.jpg'},{voteIf:false,sum:11,name:'ada',image:'img/b.jpg'},{voteIf:true,sum:11,name:'ccc',image:'img/c.jpg'},{voteIf:false,sum:12,name:'bbb',image:'img/d.jpg'},{voteIf:true,sum:13,name:'ddd',image:'img/e.jpg'},{voteIf:false,sum:14,name:'eee',image:'img/a.jpg'}];
 	$scope.click=function(view){
 		if(view.voteIf)
